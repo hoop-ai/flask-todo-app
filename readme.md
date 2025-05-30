@@ -67,10 +67,6 @@ The new feature (REST API with Swagger and tests) is implemented on branch `feat
 * Tests use an in-memory SQLite database to ensure isolation.
 
 
-## Video Presentation
-
-
-
 ## Repository Links
 
 -Original Repository: https://github.com/Ryannn20/flask-todo-app
