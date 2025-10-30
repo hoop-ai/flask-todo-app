@@ -42,7 +42,7 @@
 - **VV_README.md** - Setup and troubleshooting
 - **PROJECT_STRUCTURE.md** - File organization reference
 - **REPORT.md** - Complete V&V report template (12 sections)
-- **SLIDES.md** - 14-slide presentation outline with speaker notes
+- **slides/SLIDES.md** - 14-slide presentation outline with speaker notes
 
 ### 6. ✅ Makefile for Convenience
 - `make run` - Start Flask server
@@ -127,14 +127,14 @@ artifacts/ui_after_add.png
 **Option A: PowerPoint (Recommended)**
 
 1. Open PowerPoint
-2. Create 14 slides using SLIDES.md as your outline
+2. Create 14 slides using slides/SLIDES.md as your outline
 3. Add visuals:
    - Slide 3: App UI screenshot
    - Slide 4: Tool logos (search online: "pytest logo", etc.)
    - Slide 10: Coverage dashboard screenshot
    - Slide 11: UI screenshot
    - Slide 12: Bug/warning icon
-4. Add speaker notes from SLIDES.md to each slide
+4. Add speaker notes from slides/SLIDES.md to each slide
 5. Export as PDF: File → Export → PDF
 
 **Option B: Automated with Marp**
@@ -145,14 +145,14 @@ npm install -g @marp-team/marp-cli
 
 # Convert to PDF
 cd flask-todo-app
-marp SLIDES.md -o SLIDES.pdf
+marp slides/SLIDES.md -o slides/SLIDES.pdf
 ```
 
 **Option C: Google Slides**
 
 1. Go to Google Slides
 2. Create presentation from blank
-3. Copy content from SLIDES.md section by section
+3. Copy content from slides/SLIDES.md section by section
 4. Add images manually
 5. File → Download → PDF
 
@@ -183,7 +183,7 @@ pandoc REPORT.md -o REPORT.pdf --toc --toc-depth=2
 3. Fix formatting, insert images
 4. File → Download → PDF
 
-**For SLIDES.pdf:** See Task 3 above (export from PowerPoint/Google Slides)
+**For slides/SLIDES.pdf:** See Task 3 above (export from PowerPoint/Google Slides)
 
 **Detailed instructions:** [SUBMISSION_GUIDE.md - Section 5](file:///C:/Users/User/OneDrive/Downloads/Uni/Project%20-%20Software%20Validation/Tasks/flask-todo-app/SUBMISSION_GUIDE.md#5-exporting-to-pdf)
 
@@ -207,7 +207,7 @@ mkdir docs tests src artifacts screenshots
 ```bash
 # Documentation
 copy ..\flask-todo-app\REPORT.pdf docs\
-copy ..\flask-todo-app\SLIDES.pdf docs\
+copy ..\flask-todo-app\slides/SLIDES.pdf docs\
 copy ..\flask-todo-app\VV_README.md docs\
 
 # Tests
@@ -339,7 +339,7 @@ Total Incidents: 1
 ```
 REQUIRED:
 ✅ REPORT.pdf (your completed report)
-✅ SLIDES.pdf (your presentation)
+✅ slides/SLIDES.pdf (your presentation)
 ✅ Test files (3 .py files)
 ✅ Source files (app.py, domain_contracts.py, conftest.py, Makefile)
 ✅ Artifacts (coverage.xml, junit.xml, ui_after_add.png, htmlcov/)
@@ -373,7 +373,7 @@ Quick reference to all guides:
 | **PROJECT_STRUCTURE.md** | File organization | Find specific files |
 | **FINAL_SUMMARY.md** | This file! | Overview & next steps |
 | **REPORT.md** | V&V report template | Edit & export to PDF |
-| **SLIDES.md** | Presentation outline | Create your slides |
+| **slides/SLIDES.md** | Presentation outline | Create your slides |
 
 **Start with:** [START_HERE.md](START_HERE.md) → [QUICK_REFERENCE.md](QUICK_REFERENCE.md) → [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md)
 
@@ -420,7 +420,7 @@ DOCUMENTATION:
 □ REPORT.md filled in (names, dates, screenshots)
 □ REPORT.pdf exported
 □ SLIDES created (PowerPoint or PDF)
-□ SLIDES.pdf exported
+□ slides/SLIDES.pdf exported
 
 ORGANIZATION:
 □ VV_Project_Submission folder created
@@ -438,7 +438,7 @@ SUBMISSION:
 □ Backup copy saved
 
 PRESENTATION (if required):
-□ SLIDES.pdf reviewed
+□ slides/SLIDES.pdf reviewed
 □ Practice run completed (5 min/person)
 □ Q&A preparation done
 ```
@@ -449,7 +449,7 @@ PRESENTATION (if required):
 
 1. **Start with Screenshots** - Quick win, builds momentum
 2. **Use Find & Replace** - Fast way to fill in REPORT.md
-3. **Leverage Templates** - REPORT.md and SLIDES.md are pre-written
+3. **Leverage Templates** - REPORT.md and slides/SLIDES.md are pre-written
 4. **Highlight the Bug** - INC-001 shows V&V works
 5. **Show Visuals** - Screenshots make reports professional
 6. **Practice Presentation** - Read speaker notes aloud
@@ -518,3 +518,4 @@ Everything is in place. You have:
 **Deliverable Quality:** Professional & Complete
 
 **Good luck with your submission! You've done excellent work!** 🌟
+

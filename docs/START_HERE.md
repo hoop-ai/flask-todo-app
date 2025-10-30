@@ -31,7 +31,7 @@ Welcome! Everything for your V&V project is ready. This guide helps you find wha
 ### Documentation (Read & Edit These)
 ```
 📖 REPORT.md          → Your V&V report (FILL IN: names, dates, screenshots)
-📖 SLIDES.md          → Presentation outline (FILL IN: visuals, team info)
+📖 slides/SLIDES.md          → Presentation outline (FILL IN: visuals, team info)
 📖 VV_README.md       → Setup instructions (complete, no edits needed)
 📖 SUBMISSION_GUIDE.md → Detailed submission guide (read this!)
 📖 QUICK_REFERENCE.md → One-page cheat sheet (use as reference)
@@ -124,9 +124,9 @@ Follow [SUBMISSION_GUIDE.md - Section 3](SUBMISSION_GUIDE.md#3-completing-the-re
 Follow [SUBMISSION_GUIDE.md - Section 4](SUBMISSION_GUIDE.md#4-creating-the-presentation)
 
 **Options:**
-- **Easy:** Copy SLIDES.md content into PowerPoint → Add visuals
+- **Easy:** Copy slides/SLIDES.md content into PowerPoint → Add visuals
 - **Medium:** Use Marp or Pandoc to convert to PDF
-- **Manual:** Create fresh slides using SLIDES.md as outline
+- **Manual:** Create fresh slides using slides/SLIDES.md as outline
 
 ---
 
@@ -160,7 +160,7 @@ Follow [SUBMISSION_GUIDE.md - Section 6-8](SUBMISSION_GUIDE.md#6-organizing-deli
 ### Q: What's the minimum I need to submit?
 **A:** See [QUICK_REFERENCE.md - Files to Submit](QUICK_REFERENCE.md#-files-to-submit)
 - REPORT.pdf ⭐
-- SLIDES.pdf ⭐
+- slides/SLIDES.pdf ⭐
 - Test files (3 files) ⭐
 - Artifacts (4 items) ⭐
 
@@ -226,7 +226,7 @@ make all  # Runs everything
    - Fill in names, dates, insert screenshots
 
 7. **Do:** Create slides (2-3 hours)
-   - Use SLIDES.md as your outline
+   - Use slides/SLIDES.md as your outline
 
 8. **Do:** Export & submit (1 hour)
    - Follow Sections 5-8 of SUBMISSION_GUIDE.md
@@ -313,7 +313,7 @@ Everything is set up. You have:
 | **SUBMISSION_GUIDE.md** | Detailed instructions | Step-by-step completion |
 | **VV_README.md** | Setup & troubleshooting | Tech issues, installation |
 | **REPORT.md** | V&V report template | Fill in & export to PDF |
-| **SLIDES.md** | Presentation outline | Create your slides |
+| **slides/SLIDES.md** | Presentation outline | Create your slides |
 
 **Start with:** QUICK_REFERENCE.md (5 min read)
 **Then follow:** SUBMISSION_GUIDE.md (step-by-step)
@@ -321,3 +321,4 @@ Everything is set up. You have:
 ---
 
 **Questions?** Check the FAQ section above or read the relevant guide!
+

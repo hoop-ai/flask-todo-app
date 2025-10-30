@@ -92,7 +92,8 @@ Common troubleshooting (see `VV_README.md`): ensure browsers installed via `pyth
   - Optional: `screenshots/swagger_ui.png`, `screenshots/app_ui_home.png`
 
 ## 11. Directory Highlights
-- Documentation: `START_HERE.md`, `QUICK_REFERENCE.md`, `SUBMISSION_GUIDE.md`, `VV_README.md`, `PROJECT_STRUCTURE.md`, `REPORT.md`, `SLIDES.md`
+- Documentation: `docs/START_HERE.md`, `docs/QUICK_REFERENCE.md`, `docs/SUBMISSION_GUIDE.md`, `docs/VV_README.md`, `docs/PROJECT_STRUCTURE.md`, `docs/REPORT.md`
+- Slides: `slides/SLIDES.md`, `slides/SLIDES_CONCISE.md`, `slides/SLIDES_ENHANCED.md`
 - Tests: `tests/test_api_properties.py`, `tests/test_contracts.py`, `tests/test_ui_playwright.py`
 - Contracts: `domain_contracts.py`
 - App source: `app.py`, `templates/index.html`
@@ -100,9 +101,9 @@ Common troubleshooting (see `VV_README.md`): ensure browsers installed via `pyth
 - Database: `todo.db` (auto-generated)
 
 ## 12. Submission & Presentation Checklist
-- Update names/dates in `REPORT.md` and `SLIDES.md`
+- Update names/dates in `docs/REPORT.md` and `slides/SLIDES.md`
 - Insert screenshots (coverage dashboard, pytest output, UI evidence) in report/presentation
-- Export report and slides to PDF (`docs/REPORT.pdf`, `docs/SLIDES.pdf` or preferred location)
+- Export report and slides to PDF (`docs/REPORT.pdf`, `docs/slides/SLIDES.pdf` or preferred location)
 - Package required files: code, tests, artifacts, docs, screenshots (exclude `.venv`, caches)
 - Prepare to discuss INC-001, coverage gaps, and future work during presentation
 - Practice narrative using SLIDES speaker notes (approx. 5 minutes per presenter)
@@ -541,7 +542,7 @@ All test artifacts are stored in the `artifacts/` directory:
 **Version:** 1.0
 
 ---
-## Full Presentation Outline (SLIDES.md)
+## Full Presentation Outline (slides/SLIDES.md)
 
 # SEN4013 V&V Project Presentation
 ## Flask Todo App Verification & Validation
@@ -1047,3 +1048,5 @@ Questions?
 - If using PowerPoint: paste content and add visuals
 
 Good luck! 🚀
+
+

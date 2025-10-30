@@ -454,7 +454,7 @@ flask-todo-app/
 ├── Makefile                    # Convenience commands (NEW)
 ├── requirements.txt            # Original app dependencies
 ├── REPORT.md                   # V&V report (NEW)
-├── SLIDES.md                   # Presentation outline (NEW)
+├── slides/SLIDES.md                   # Presentation outline (NEW)
 ├── VV_README.md                # This file (NEW)
 ├── tests/                      # Test suite (NEW)
 │   ├── test_api_properties.py  # Functional + property tests
@@ -493,7 +493,7 @@ When submitting your V&V project, ensure you include:
 
 - [ ] **Documentation**
   - [ ] `REPORT.md` (or PDF export)
-  - [ ] `SLIDES.md` (or PowerPoint/PDF export)
+  - [ ] `slides/SLIDES.md` (or PowerPoint/PDF export)
   - [ ] `VV_README.md` (this file)
 
 - [ ] **Instructions**
@@ -502,12 +502,12 @@ When submitting your V&V project, ensure you include:
 
 ### Generating PDF Reports
 
-**From Markdown (REPORT.md and SLIDES.md):**
+**From Markdown (REPORT.md and slides/SLIDES.md):**
 
 ```bash
 # Option 1: Pandoc
 pandoc REPORT.md -o REPORT.pdf
-pandoc SLIDES.md -o SLIDES.pdf -t beamer
+pandoc slides/SLIDES.md -o slides/SLIDES.pdf -t beamer
 
 # Option 2: VS Code Markdown PDF extension
 # Install "Markdown PDF" extension
@@ -540,7 +540,7 @@ pandoc SLIDES.md -o SLIDES.pdf -t beamer
    - Export to PDF
 
 5. **Prepare Presentation**
-   - Use `SLIDES.md` as outline
+   - Use `slides/SLIDES.md` as outline
    - Add visuals (screenshots, diagrams)
    - Practice delivery (5 minutes per person)
 
@@ -597,3 +597,4 @@ Original Flask Todo App: See https://github.com/onurtacc/flask-todo-app for lice
 **Last Updated:** October 30, 2025
 **Version:** 1.0
 **Authors:** [Your Team Names]
+

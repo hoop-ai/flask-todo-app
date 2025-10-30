@@ -8,55 +8,51 @@ Visual guide to all files in your V&V project.
 
 ```
 flask-todo-app/
-│
-├── 📖 START_HERE.md                    ⭐ READ THIS FIRST - Navigation guide
-├── 📖 QUICK_REFERENCE.md               ⭐ One-page cheat sheet
-├── 📖 SUBMISSION_GUIDE.md              ⭐ Detailed submission instructions (13 sections)
-├── 📖 VV_README.md                     ⭐ Setup & troubleshooting guide
-├── 📖 REPORT.md                        ✏️ FILL IN: Your V&V report (export to PDF)
-├── 📖 SLIDES.md                        ✏️ FILL IN: Presentation outline (export to PDF)
-├── 📖 PROJECT_STRUCTURE.md             📋 This file - shows all files
-│
-├── 🐍 app.py                           ✅ Flask application (modified for testing)
-├── 🐍 domain_contracts.py              ✅ Business logic contracts (icontract)
-├── 🐍 conftest.py                      ✅ Pytest configuration
-├── 📝 Makefile                         ✅ Convenience commands (make all, make test, etc.)
-├── 📝 requirements.txt                 ✅ Original Flask app dependencies
-│
-├── 📂 tests/                           ⭐ TEST SUITE (3 files)
-│   ├── test_api_properties.py          ✅ Functional + property-based tests (Hypothesis)
-│   ├── test_contracts.py               ✅ Runtime contract verification
-│   └── test_ui_playwright.py           ✅ UI E2E tests with screenshot capture
-│
-├── 📂 artifacts/                       ⭐ TEST ARTIFACTS (auto-generated)
-│   ├── coverage.xml                    ✅ Coverage report (Cobertura format, ~6 KB)
-│   ├── junit.xml                       ✅ Test results (JUnit format, ~3 KB)
-│   └── ui_after_add.png                ✅ UI screenshot (959 KB) 📸
-│
-├── 📂 htmlcov/                         ⭐ COVERAGE HTML REPORT
-│   ├── index.html                      ✅ Main coverage dashboard (open in browser)
-│   ├── status.json                     ✅ Coverage metadata
-│   └── [many other HTML files]         ✅ Per-file coverage details
-│
-├── 📂 screenshots/                     📸 YOUR SCREENSHOTS (you create this)
-│   ├── coverage_dashboard.png          📸 TO CREATE: Screenshot of htmlcov/index.html
-│   ├── pytest_output.png               📸 TO CREATE: Screenshot of pytest -v output
-│   ├── swagger_ui.png                  📸 OPTIONAL: Screenshot of /apidocs
-│   └── app_ui_home.png                 📸 OPTIONAL: Screenshot of app homepage
-│
-├── 📂 templates/                       🌐 Flask HTML templates (original app)
-│   └── index.html                      🌐 Homepage template
-│
-├── 📂 static/                          🎨 CSS/JS files (if any, original app)
-│
-├── 📂 .venv/                           🚫 Virtual environment (DO NOT submit)
-│   └── [Python packages]               🚫 Excluded from submission (too large)
-│
-├── 📂 .pytest_cache/                   🚫 Pytest cache (auto-generated)
-├── 📂 __pycache__/                     🚫 Python cache (auto-generated)
-├── 🗄️ todo.db                          🚫 SQLite database (auto-generated)
-├── 📝 .coverage                        🚫 Coverage data file (auto-generated)
-└── 📝 README.md                        📖 Original app README (optional to keep)
++-- docs/
+�   +-- FINAL_SUMMARY.md            # Completion overview and checklist
+�   +-- MEGA_CONTEXT.md             # Aggregated context (report + slides + summary)
+�   +-- PROJECT_STRUCTURE.md        # This file
+�   +-- QUICK_REFERENCE.md          # One-page cheat sheet
+�   +-- REPORT.md                   # Full V&V report (fill in names/dates)
+�   +-- START_HERE.md               # Navigation guide � read first
+�   +-- SUBMISSION_GUIDE.md         # Step-by-step submission instructions
+�   +-- VV_README.md                # Setup and troubleshooting guide
++-- slides/
+�   +-- slides/SLIDES.md                   # Primary presentation outline
+�   +-- slides/SLIDES_CONCISE.md           # 6�8 minute deck
+�   +-- slides/SLIDES_ENHANCED.md          # Extended presentation notes
++-- artifacts/                      # Test artifacts (auto-generated)
+�   +-- coverage.xml
+�   +-- junit.xml
+�   +-- ui_after_add.png
++-- htmlcov/                        # HTML code-coverage report
+�   +-- index.html
+�   +-- status.json
++-- screenshots/                    # Place manually captured screenshots here
+�   +-- coverage_dashboard.png
+�   +-- pytest_output.png
+�   +-- swagger_ui.png
+�   +-- app_ui_home.png
++-- templates/
+�   +-- index.html
++-- tests/
+�   +-- test_api_properties.py
+�   +-- test_contracts.py
+�   +-- test_ui_playwright.py
++-- app.py
++-- conftest.py
++-- domain_contracts.py
++-- Makefile
++-- README.md
++-- requirements.txt
++-- test_app.py
++-- todo.db
++-- .coverage
++-- .gitignore
++-- .hypothesis/
++-- .pytest_cache/
++-- .venv/
++-- __pycache__/
 ```
 
 ---
@@ -65,15 +61,15 @@ flask-todo-app/
 
 ### 📖 Documentation (Read & Edit)
 
-| File | Status | Action Required |
-|------|--------|----------------|
-| START_HERE.md | ✅ Complete | **Read first** - navigation guide |
-| QUICK_REFERENCE.md | ✅ Complete | Use as cheat sheet |
-| SUBMISSION_GUIDE.md | ✅ Complete | Follow step-by-step |
-| VV_README.md | ✅ Complete | Reference for setup/troubleshooting |
-| **REPORT.md** | ✏️ **Edit** | **Fill in:** names, dates, screenshots |
-| **SLIDES.md** | ✏️ **Edit** | **Fill in:** visuals, team info |
-| PROJECT_STRUCTURE.md | ✅ Complete | This file (reference) |
+| File (relative path) | Status | Action Required |
+|----------------------|--------|----------------|
+| docs/START_HERE.md | ?o. Complete | **Read first** - navigation guide |
+| docs/QUICK_REFERENCE.md | ?o. Complete | Use as cheat sheet |
+| docs/SUBMISSION_GUIDE.md | ?o. Complete | Follow step-by-step |
+| docs/VV_README.md | ?o. Complete | Reference for setup/troubleshooting |
+| docs/REPORT.md | ?o??,? **Edit** | **Fill in:** names, dates, screenshots |
+| slides/SLIDES.md | ?o??,? **Edit** | **Fill in:** visuals, team info |
+| docs/PROJECT_STRUCTURE.md | ?o. Complete | This file (reference) |
 
 ---
 
@@ -140,7 +136,7 @@ flask-todo-app/
 ```
 ✅ docs/
    ├── REPORT.pdf               (your filled-in report)
-   ├── SLIDES.pdf               (your presentation)
+   ├── slides/SLIDES.pdf               (your presentation)
    └── VV_README.md             (setup instructions)
 
 ✅ tests/
@@ -278,13 +274,13 @@ START_HERE.md
 ### When Creating Your Presentation:
 
 **Reference these:**
-- `SLIDES.md` → Outline with speaker notes
+- `slides/SLIDES.md` → Outline with speaker notes
 - `screenshots/*` → All images
 - `artifacts/ui_after_add.png` → UI demo
 
 **Create:**
 - PowerPoint or Google Slides (14 slides)
-- Or use Marp/Pandoc to convert SLIDES.md
+- Or use Marp/Pandoc to convert slides/SLIDES.md
 
 ---
 
@@ -320,7 +316,7 @@ FILE PREPARATION:
 □ REPORT.md filled in (names, dates, screenshots)
 □ SLIDES created (PowerPoint or PDF)
 □ REPORT.pdf exported
-□ SLIDES.pdf exported
+□ slides/SLIDES.pdf exported
 
 FILE ORGANIZATION:
 □ Created VV_Project_Submission/ folder
@@ -364,7 +360,7 @@ SUBMISSION:
 ### "Which files do I edit?"
 - **Only edit:**
   - `REPORT.md` → Fill in names, dates, screenshots
-  - `SLIDES.md` → Add team info, create presentation
+  - `slides/SLIDES.md` → Add team info, create presentation
 - **Don't edit:**
   - Test files (already complete)
   - Artifacts (auto-generated)
@@ -413,3 +409,7 @@ Need to do something? Check [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md).
 Need a quick answer? Check [QUICK_REFERENCE.md](QUICK_REFERENCE.md).
 
 **Good luck with your submission!** 🚀
+
+
+
+

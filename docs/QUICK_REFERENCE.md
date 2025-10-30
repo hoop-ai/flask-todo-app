@@ -58,7 +58,7 @@ pytest -v
 ### Required Files (Must Include)
 ```
 ✅ docs/REPORT.pdf               (your completed report)
-✅ docs/SLIDES.pdf               (your presentation)
+✅ docs/slides/SLIDES.pdf               (your presentation)
 ✅ docs/VV_README.md             (setup instructions)
 ✅ tests/test_api_properties.py  (functional + property tests)
 ✅ tests/test_contracts.py       (contract tests)
@@ -86,7 +86,7 @@ pytest -v
 3. Insert screenshot: `![Coverage](screenshots/coverage_dashboard.png)`
 4. Review all sections, remove any `[PLACEHOLDER]` text
 
-### In SLIDES.md:
+### In slides/SLIDES.md:
 1. Add team names on Slide 1
 2. Add visuals (screenshots, logos)
 3. Review speaker notes
@@ -145,7 +145,7 @@ mkdir VV_Project_Submission
 
 # Copy key files (see "Files to Submit" above)
 cp flask-todo-app/REPORT.pdf VV_Project_Submission/docs/
-cp flask-todo-app/SLIDES.pdf VV_Project_Submission/docs/
+cp flask-todo-app/slides/SLIDES.pdf VV_Project_Submission/docs/
 # ... (see SUBMISSION_GUIDE.md for full list)
 
 # Create ZIP
@@ -233,7 +233,7 @@ start htmlcov\index.html
 - **Detailed Instructions:** [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md) (13 sections, 500+ lines)
 - **Setup & Run:** [VV_README.md](VV_README.md)
 - **Full Report Template:** [REPORT.md](REPORT.md)
-- **Presentation Outline:** [SLIDES.md](SLIDES.md)
+- **Presentation Outline:** [slides/SLIDES.md](slides/SLIDES.md)
 
 ---
 
@@ -259,7 +259,7 @@ Before submitting, verify:
 - [ ] `htmlcov/index.html` opens and shows 67%
 - [ ] `artifacts/ui_after_add.png` exists and is viewable
 - [ ] REPORT.pdf has your names and date
-- [ ] SLIDES.pdf includes visuals
+- [ ] slides/SLIDES.pdf includes visuals
 - [ ] Screenshots captured (minimum 2)
 - [ ] ZIP file created and < 50MB
 - [ ] Submitted via Microsoft Teams
@@ -274,7 +274,7 @@ Before submitting, verify:
 | Tool Review | 35 pts | ✅ 6 tools documented in REPORT.md |
 | Test Results | 35 pts | ✅ All 6 test types completed |
 | Report | 20 pts | ✅ REPORT.md template (fill in names/dates) |
-| Presentation | 10 pts | ✅ SLIDES.md outline (add visuals) |
+| Presentation | 10 pts | ✅ slides/SLIDES.md outline (add visuals) |
 
 ---
 
@@ -327,3 +327,4 @@ start artifacts\ui_after_add.png
 **Good luck! 🚀 You've got this!**
 
 Everything is already set up and working. Just capture screenshots, fill in your names, export to PDF, and submit!
+

@@ -489,7 +489,7 @@ Add any limitations you observed during testing, for example:
 
 ## 4. Creating the Presentation
 
-Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
+Your presentation outline is in `slides/SLIDES.md`. Here's how to turn it into slides:
 
 ### Option 1: Use Markdown to Slides Tools
 
@@ -505,18 +505,18 @@ Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
 
    ```bash
    cd flask-todo-app
-   marp SLIDES.md -o SLIDES.pdf
+   marp slides/SLIDES.md -o slides/SLIDES.pdf
    ```
 
 3. **Or create PowerPoint:**
 
    ```bash
-   marp SLIDES.md -o SLIDES.pptx
+   marp slides/SLIDES.md -o slides/SLIDES.pptx
    ```
 
 4. **Preview in VS Code:**
    - Install "Marp for VS Code" extension
-   - Open SLIDES.md
+   - Open slides/SLIDES.md
    - Click "Open Preview to the Side"
 
 ---
@@ -532,7 +532,7 @@ Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
 2. **Present live:**
 
    ```bash
-   reveal-md SLIDES.md
+   reveal-md slides/SLIDES.md
    ```
 
    Opens in browser at http://localhost:1948
@@ -540,7 +540,7 @@ Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
 3. **Export to PDF:**
 
    ```bash
-   reveal-md SLIDES.md --print SLIDES.pdf
+   reveal-md slides/SLIDES.md --print slides/SLIDES.pdf
    ```
 
 ---
@@ -552,7 +552,7 @@ Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
 2. **Convert to PDF:**
 
    ```bash
-   pandoc SLIDES.md -t beamer -o SLIDES.pdf
+   pandoc slides/SLIDES.md -t beamer -o slides/SLIDES.pdf
    ```
 
 ---
@@ -563,7 +563,7 @@ Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
 
 1. **Open PowerPoint or Google Slides**
 
-2. **Create slides from SLIDES.md:**
+2. **Create slides from slides/SLIDES.md:**
 
    - **Slide 1:** Copy title and team info
    - **Slide 2:** Copy "What is Verification & Validation?" content
@@ -577,7 +577,7 @@ Your presentation outline is in `SLIDES.md`. Here's how to turn it into slides:
    - Slide 4: Add tool logos (search "pytest logo", "hypothesis logo", etc.)
 
 4. **Add speaker notes:**
-   - Copy the "Speaker Notes" sections from SLIDES.md
+   - Copy the "Speaker Notes" sections from slides/SLIDES.md
    - Paste into PowerPoint's notes pane (View → Notes)
    - Or Google Slides: Insert → Speaker notes
 
@@ -702,13 +702,13 @@ grip REPORT.md
 
 ---
 
-### Export SLIDES.md to PDF
+### Export slides/SLIDES.md to PDF
 
 See [Section 4 - Creating the Presentation](#4-creating-the-presentation) above.
 
 **Quick options:**
-- Marp: `marp SLIDES.md -o SLIDES.pdf`
-- Pandoc: `pandoc SLIDES.md -t beamer -o SLIDES.pdf`
+- Marp: `marp slides/SLIDES.md -o slides/SLIDES.pdf`
+- Pandoc: `pandoc slides/SLIDES.md -t beamer -o slides/SLIDES.pdf`
 - Manual: Create in PowerPoint/Google Slides → Export to PDF
 
 ---
@@ -754,8 +754,8 @@ cp -r ../flask-todo-app/htmlcov ./artifacts/
 # Documentation
 cp ../flask-todo-app/REPORT.md ./docs/
 cp ../flask-todo-app/REPORT.pdf ./docs/
-cp ../flask-todo-app/SLIDES.md ./docs/
-cp ../flask-todo-app/SLIDES.pdf ./docs/
+cp ../flask-todo-app/slides/SLIDES.md ./docs/
+cp ../flask-todo-app/slides/SLIDES.pdf ./docs/
 cp ../flask-todo-app/VV_README.md ./docs/
 
 # Screenshots
@@ -779,7 +779,7 @@ Create `VV_Project_Submission/README.md`:
 
 - `docs/` - Reports and presentation
   - `REPORT.pdf` - Full V&V report (12 sections)
-  - `SLIDES.pdf` - Presentation slides (14 slides)
+  - `slides/SLIDES.pdf` - Presentation slides (14 slides)
   - `VV_README.md` - Setup and run instructions
 
 - `src/` - Source code
@@ -842,9 +842,9 @@ VV_Project_Submission/
 ├── README.md                    ← Quick overview
 ├── docs/
 │   ├── REPORT.pdf              ⭐ REQUIRED
-│   ├── SLIDES.pdf              ⭐ REQUIRED
+│   ├── slides/SLIDES.pdf              ⭐ REQUIRED
 │   ├── REPORT.md               (optional - Markdown source)
-│   ├── SLIDES.md               (optional - Markdown source)
+│   ├── slides/SLIDES.md               (optional - Markdown source)
 │   └── VV_README.md            ⭐ REQUIRED
 ├── src/
 │   ├── app.py
@@ -909,7 +909,7 @@ Before submitting, verify everything is complete:
   - [ ] All 12 sections complete
   - [ ] File size reasonable (< 20MB)
 
-- [ ] **SLIDES.pdf exists and is complete**
+- [ ] **slides/SLIDES.pdf exists and is complete**
   - [ ] All 14 slides included
   - [ ] Visuals added (screenshots, logos, diagrams)
   - [ ] Speaker notes included (if PowerPoint)
@@ -968,7 +968,7 @@ Before submitting, verify everything is complete:
 - [ ] **Test ZIP extraction:**
   - Extract to a temporary folder
   - Verify all files are there
-  - Try opening REPORT.pdf and SLIDES.pdf
+  - Try opening REPORT.pdf and slides/SLIDES.pdf
 
 ---
 
@@ -1020,7 +1020,7 @@ Before submitting, verify everything is complete:
 
    This submission includes:
    - Full V&V report (REPORT.pdf)
-   - Presentation slides (SLIDES.pdf)
+   - Presentation slides (slides/SLIDES.pdf)
    - Test suite (pytest, Hypothesis, Playwright, icontract, CrossHair)
    - Test artifacts (coverage XML/HTML, JUnit XML, UI screenshot)
    - Setup instructions (VV_README.md)
@@ -1069,9 +1069,9 @@ Before submitting, verify everything is complete:
    - Keep local copy on USB drive
 
 2. **Prepare for presentation:**
-   - If in-class presentation required, practice with SLIDES.pdf
+   - If in-class presentation required, practice with slides/SLIDES.pdf
    - Allocate ~5 minutes per team member
-   - Prepare for Q&A (review Section 13-14 of SLIDES.md "Backup Slides")
+   - Prepare for Q&A (review Section 13-14 of slides/SLIDES.md "Backup Slides")
 
 3. **Celebrate!** 🎉
    - You've completed a comprehensive V&V project
@@ -1248,7 +1248,7 @@ Quick reference for what needs to be done:
 □ Capture 2-3 key screenshots (coverage dashboard, pytest output, UI)
 □ Complete REPORT.md (fill in names, dates, insert screenshots)
 □ Export REPORT.md to REPORT.pdf
-□ Create SLIDES from SLIDES.md (PowerPoint or PDF)
+□ Create SLIDES from slides/SLIDES.md (PowerPoint or PDF)
 □ Organize files into VV_Project_Submission folder
 □ Create ZIP archive
 □ Submit via Microsoft Teams
@@ -1267,3 +1267,4 @@ If you have any questions about these instructions, ask before the deadline!
 **Last Updated:** October 30, 2025
 **Version:** 1.0
 **Authors:** Claude Code AI Assistant
+
